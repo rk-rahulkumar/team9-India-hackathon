@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Search similar cases and knowledge base</label>
+    <protected>false</protected>
+    <values>
+        <field>copadoAiHelper__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Assistant_prompt_after__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Assistant_prompt_before__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Language__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Object__c</field>
+        <value xsi:type="xsd:string">Case</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Order__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Prompt__c</field>
+        <value xsi:type="xsd:string">Find response from similar issues.</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__System_prompt_before__c</field>
+        <value xsi:type="xsd:string">You are a Support Copilot for me and you are going to help me in creating a response for this case that will later be used to send a case comment to customers.
+
+This is the case information:
+1.) Case Subject: {subject}
+2.) Case Description: {description}
+
+Use information from below similar cases:
+
+Do note that this is an array of attribute-value pairs in json format and it is surrounded by ``` characters. Ignore the &quot;attribute&quot; json key.
+
+```
+{SELECT Subject, Description, Troubleshooting_Steps__c, Root_Cause_Analysis__c FROM Case WHERE Subject Like &apos;%{subject}%&apos; AND Id != :contextId AND IsClosed = true LIMIT 1}
+```
+
+Using all this information than finally provide a draft case comment without adding any existing case directly into answer like case Id and make sure to get it verified by me before creating the case comment. Add the articles references if any in the case comment. Comment for customer should not be more than 100 words.</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>copadoAiHelper__Action</members>
+		<members>copadoAiHelper__ActionResponse</members>
+		<members>copadoAiHelper__ActionTest</members>
+		<members>copadoAiHelper__OpenAIQuestionProcessor</members>
+		<members>copadoAiHelper__OpenAIQuestionProcessorTest</members>
+		<members>copadoAiHelper__OpenAITestDataFactory</members>
+		<members>copadoAiHelper__OpenAiApiService</members>
+		<members>copadoAiHelper__OpenAiApiServiceTest</members>
+		<members>copado__DataTemplateDetail</members>
+		<members>copado__DataTemplateMainObjectTableCtrl</members>
+		<members>copado__DataTemplateTabContainerCtrl</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>copadoAiHelper__ai_companion_global_action</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
+	<types>
+		<members>copadoAiHelper__aiMessage</members>
+		<members>copadoAiHelper__copadoAiHelper</members>
+		<members>copadoAiHelper__copadoAiHelperDispatcher</members>
+		<members>copadoAiHelper__copado_devops_ai_companion</members>
+		<members>copadoAiHelper__previewModal</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>58.0</version>
+</Package>

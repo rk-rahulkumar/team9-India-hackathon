@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Create Investigation For This Case</label>
+    <protected>false</protected>
+    <values>
+        <field>copadoAiHelper__Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Assistant_prompt_after__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Assistant_prompt_before__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Language__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Object__c</field>
+        <value xsi:type="xsd:string">Case</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Order__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Prompt__c</field>
+        <value xsi:type="xsd:string">Create Investigation</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__System_prompt_before__c</field>
+        <value xsi:type="xsd:string">You are a Support Copilot and you are going to help me in creating a investigation for this case that will later be used by product team to work on resolution of this case.
+
+This is the case information:
+1.) Case Subject: {subject}
+2.) Case Description: {description}
+3.) Troubleshooting Steps: {troubleshooting steps}
+
+Using all this information provide a summary for this case which can be understandable by developers and create a investigation for product team.</value>
+    </values>
+</CustomMetadata>

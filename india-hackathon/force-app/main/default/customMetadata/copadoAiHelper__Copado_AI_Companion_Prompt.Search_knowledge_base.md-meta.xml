@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Search knowledge base</label>
+    <protected>false</protected>
+    <values>
+        <field>copadoAiHelper__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Assistant_prompt_after__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Assistant_prompt_before__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Language__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>copadoAiHelper__Object__c</field>
+        <value xsi:type="xsd:string">Case</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Order__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__Prompt__c</field>
+        <value xsi:type="xsd:string">Find answer for this case
+This is the numbered list of fields and their values in the Case...
+1.) Case Subject: {subject}
+2.) Case Description: {description}</value>
+    </values>
+    <values>
+        <field>copadoAiHelper__System_prompt_before__c</field>
+        <value xsi:type="xsd:string">You are a Copilot for me and you are going to help me in creating a response for this case that will later be used to send a case comment to customers.
+
+Using all this information of case finally provide a draft case comment along with the links of references and make sure to get it verified before creating it. Comment for customer should not be more than 100 words.</value>
+    </values>
+</CustomMetadata>
